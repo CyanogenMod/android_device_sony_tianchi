@@ -77,6 +77,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/sbin/wait4tad_static:root/sbin/wait4tad_static \
     $(DEVICE_PATH)/rootdir/sbin/tad_static:root/sbin/tad_static
 
+# Audio Configs
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/system/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(DEVICE_PATH)/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
@@ -84,23 +85,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/system/etc/msap.conf:system/etc/msap.conf \
-    $(DEVICE_PATH)/rootdir/system/etc/sec_config:system/etc/sec_config
 
-# NFC packages
-PRODUCT_PACKAGES += \
-    libnfc-nci \
-    libnfc_nci_jni \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras \
-    nfc_nci.msm8226
-
-# NFCEE access control
-NFCEE_ACCESS_PATH := $(DEVICE_PATH)/rootdir/system/etc/nfcee_access.xml
-
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/system/etc/nfcee_access.xml:system/etc/nfcee_access.xml
-
+# NFC Configs
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     $(DEVICE_PATH)/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
