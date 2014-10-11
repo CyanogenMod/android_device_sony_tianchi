@@ -27,9 +27,6 @@ TARGET_KERNEL_CONFIG := cm_yukon_tianchi_defconfig
 # Hardware Features
 BOARD_HARDWARE_CLASS := device/sony/tianchi/cmhw
 
-# Kernel information
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/tianchi/custombootimg.mk
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/tianchi/bluetooth
 
