@@ -21,7 +21,7 @@ TARGET_OTA_ASSERT_DEVICE := D5303,tianchi
 TARGET_SPECIFIC_HEADER_PATH += device/sony/tianchi/include
 
 # Kernel properties
-TARGET_KERNEL_SOURCE := kernel/sony/msm8226
+TARGET_KERNEL_SOURCE := kernel/sony/tianchi
 TARGET_KERNEL_CONFIG := cm_yukon_tianchi_defconfig
 
 # Hardware Features
