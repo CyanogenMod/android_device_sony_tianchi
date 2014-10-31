@@ -370,6 +370,14 @@ service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
     disabled
     oneshot
 
+service ril-daemon1 /system/bin/rild -c 1
+    class main
+    socket rild1 stream 660 root radio
+    socket rild-debug1 stream 660 radio system
+    user root
+    group radio cache inet misc audio sdcard_rw qcom_oncrpc qcom_diag log
+    disabled
+
 service sdcard /system/bin/sdcard -u 1023 -g 1023 -l /data/media /mnt/shell/emulated
     class late_start
 
