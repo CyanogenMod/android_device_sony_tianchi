@@ -205,7 +205,6 @@ vendor/camera/morpho_posturedetect.cfg
 vendor/camera/morpho_scenedetect.cfg
 vendor/camera/morpho_super_resolution.cfg
 vendor/camera/morpho_tracksolid.cfg
-vendor/etc/audio_effects.conf
 vendor/firmware/keymaster/keymaster.b00
 vendor/firmware/keymaster/keymaster.b01
 vendor/firmware/keymaster/keymaster.b02
@@ -214,7 +213,6 @@ vendor/firmware/keymaster/keymaster.flist
 vendor/firmware/keymaster/keymaster.mdt
 vendor/firmware/libpn547_fw.so
 vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/hw/power.qcom.so
 vendor/lib/hw/sensors.msm8226.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libacdbloader.so
