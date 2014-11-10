@@ -38,13 +38,8 @@ on fs
     # SONY: Start early TA-users
     exec /system/bin/taimport
 
-    mkdir /mnt/idd 0751 sony_idd sony_idd
-
     mount_all fstab.qcom
     setprop ro.crypto.fuse_sdcard true
-
-    chown sony_idd sony_idd /mnt/idd
-    chmod 0751 /mnt/idd
 
     # Create a tmpfs for dynamic network mounting
     mkdir /storage/remote  0700 root system
@@ -105,7 +100,7 @@ on boot
 service tad_static /sbin/tad_static /dev/block/mmcblk0 1,16
     user root
     group root
-    socket tad stream 0660 system sony_ta
+    socket tad stream 0640 system system
     class sony_ta
 
 service updatemiscta /system/bin/updatemiscta
