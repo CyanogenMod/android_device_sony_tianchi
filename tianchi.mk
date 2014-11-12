@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
-    frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
+    frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml
 
 # This device is xhdpi.
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
@@ -54,10 +54,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/msap.conf:system/etc/msap.conf \
+    $(LOCAL_PATH)/rootdir/system/etc/msap.conf:system/etc/msap.conf
 
 # NFC Configs
 PRODUCT_COPY_FILES += \
@@ -66,14 +66,13 @@ PRODUCT_COPY_FILES += \
 
 # Media recording
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    $(LOCAL_PATH)/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    $(LOCAL_PATH)/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
     $(LOCAL_PATH)/rootdir/system/etc/sensor_def_somc.conf:system/etc/sensor_def_somc.conf \
-    $(LOCAL_PATH)/rootdir/system/etc/sensors_calib.conf:system/etc/sensors_calib.conf \
+    $(LOCAL_PATH)/rootdir/system/etc/sensors_calib.conf:system/etc/sensors_calib.conf
 
 # System Monitor (Thermal Control)
 PRODUCT_COPY_FILES += \
@@ -93,4 +92,3 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/tianchi/tianchi-vendor.mk)
-
