@@ -95,6 +95,14 @@ on boot
     chown system system /sys/class/leds/lm3630-lcd-bl/brightness
     chmod 660 /sys/class/leds/lm3630-lcd-bl/brightness
 
+    # LED
+    chown system system /sys/class/leds/led:rgb_red/brightness
+    chown system system /sys/class/leds/led:rgb_green/brightness
+    chown system system /sys/class/leds/led:rgb_blue/brightness
+    chmod 660 /sys/class/leds/led:rgb_red/brightness
+    chmod 660 /sys/class/leds/led:rgb_green/brightness
+    chmod 660 /sys/class/leds/led:rgb_blue/brightness
+
 # SONY: TrimArea Daemon
 # Last 2 args: start block(blk size 128k), number of blocks(partitionsize(kb)/128(kb))
 service tad_static /sbin/tad_static /dev/block/mmcblk0 1,16

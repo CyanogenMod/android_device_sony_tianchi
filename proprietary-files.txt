@@ -131,7 +131,6 @@ etc/firmware/wcnss.b08
 etc/firmware/wcnss.b09
 etc/firmware/wcnss.mdt
 lib/hw/camera.msm8226.so:lib/hw/camera.vendor.msm8226.so
-lib/hw/lights.default.so:lib/hw/lights.vendor.default.so
 lib/sysmon/sysmon_batt_therm.so
 lib/sysmon/sysmon_charge_current_limit_level.so
 lib/sysmon/sysmon_charging.so
