@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Resolution
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+
 # Kernel properties
 BUILD_KERNEL_WITH_ROM := true
 TARGET_KERNEL_SOURCE := kernel/sony
@@ -25,6 +29,9 @@ TARGET_RECOVERY_FSTAB := device/sony/tianchi/rootdir/fstab.yukon
 
 # Inherit from tianchi device
 $(call inherit-product, device/sony/tianchi/aosp_d5303.mk)
+
+# Inherit from common resources
+$(call inherit-product, device/sony/common/resources.mk)
 
 # Inherit CM common stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
