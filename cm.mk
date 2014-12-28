@@ -21,9 +21,7 @@ TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
 TARGET_OTA_ASSERT_DEVICE := D5303,tianchi
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/sony/tianchi/rootdir/recovery.fstab
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
-BOARD_RECOVERY_SWIPE := true
+TARGET_RECOVERY_FSTAB := device/sony/tianchi/rootdir/fstab.yukon
 
 # Inherit from tianchi device
 $(call inherit-product, device/sony/tianchi/aosp_d5303.mk)

@@ -41,8 +41,10 @@ PRODUCT_NAME := aosp_d5303
 PRODUCT_DEVICE := tianchi
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := Xperia T2 Ultra (AOSP)
-PRODUCT_LOCALES += xhdpi hdpi
 PRODUCT_MANUFACTURER := Sony
+
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
