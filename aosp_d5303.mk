@@ -18,7 +18,7 @@ BOARD_HAS_DIM_BACKLIGHT := true
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
-$(call inherit-product, device/sony/yukon/device.mk)
+$(call inherit-product, device/sony/msm8226-common/device.mk)
 $(call inherit-product, vendor/sony/tianchi/tianchi-vendor.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
