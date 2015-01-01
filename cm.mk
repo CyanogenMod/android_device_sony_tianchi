@@ -24,9 +24,6 @@ TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D5303,tianchi
 
-# Recovery
-TARGET_RECOVERY_FSTAB := device/sony/tianchi/rootdir/fstab.yukon
-
 # Inherit from tianchi device
 $(call inherit-product, device/sony/tianchi/aosp_d5303.mk)
 
