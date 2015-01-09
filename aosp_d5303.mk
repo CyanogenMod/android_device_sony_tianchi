@@ -37,6 +37,8 @@ PRODUCT_COPY_FILES += \
     device/sony/tianchi/rootdir/system/etc/sensors_calib.conf:system/etc/sensors_calib.conf \
     device/sony/tianchi/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/sony/tianchi/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
+    device/sony/tianchi/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/sony/tianchi/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/tianchi/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc \
     device/sony/tianchi/rootdir/fstab.yukon:root/fstab.yukon
 
