@@ -1,3 +1,4 @@
+bin/fm_qsoc_patches
 bin/hci_qcomm_init
 bin/sensors.qcom
 etc/firmware/adsp.b00
