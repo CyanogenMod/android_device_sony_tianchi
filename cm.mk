@@ -18,8 +18,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # Kernel properties
 BUILD_KERNEL_WITH_ROM := true
-TARGET_KERNEL_SOURCE := kernel/sony
-TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
+TARGET_KERNEL_CONFIG := cm_yukon_tianchi_defconfig
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D5303,tianchi
