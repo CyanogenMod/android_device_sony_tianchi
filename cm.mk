@@ -17,7 +17,7 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
+TARGET_KERNEL_CONFIG := cm_yukon_tianchi_defconfig
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D5303,tianchi
