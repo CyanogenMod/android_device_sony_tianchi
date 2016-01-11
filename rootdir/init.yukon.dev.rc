@@ -1,3 +1,7 @@
+on post-fs-data
+    # Modem
+    mkdir /data/modem 0770 system system
+
 #OSS WLAN setup
 service macaddrsetup /system/bin/macaddrsetup /sys/devices/fb000000.qcom,wcnss-wlan/wcnss_mac_addr
     class main
@@ -9,3 +13,10 @@ service sensors /system/vendor/bin/sensors.qcom
     class main
     user root
     group root
+
+# Copy Modem blobs for symlinks
+service modem_copy /system/bin/sh /init.modem_copy.sh
+    class core
+    user root
+    group root
+    oneshot
