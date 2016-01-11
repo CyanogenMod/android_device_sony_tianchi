@@ -14,6 +14,10 @@
 
 include device/sony/yukon/BoardConfig.mk
 
+# init
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_LIBINIT_DEFINES_FILE := device/sony/tianchi/init/init_tianchi.cpp
+
 TARGET_RECOVERY_FSTAB = device/sony/tianchi/rootdir/fstab.yukon
 
 TARGET_BOOTLOADER_BOARD_NAME := D5303
