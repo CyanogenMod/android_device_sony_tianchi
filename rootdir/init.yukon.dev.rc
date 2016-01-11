@@ -9,3 +9,10 @@ service sensors /system/vendor/bin/sensors.qcom
     class main
     user root
     group root
+
+# Copy Modem blobs
+service modem_copy /system/bin/sh /init.modem_copy.sh
+    class core
+    user root
+    group root
+    oneshot
