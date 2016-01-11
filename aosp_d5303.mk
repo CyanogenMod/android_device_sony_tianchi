@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
     device/sony/tianchi/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/sony/tianchi/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/tianchi/rootdir/init.yukon.dev.rc:root/init.yukon.dev.rc \
+    device/sony/tianchi/rootdir/init.modem_copy.sh:root/init.modem_copy.sh \
     device/sony/tianchi/rootdir/fstab.yukon:root/fstab.yukon
 
 PRODUCT_PACKAGES += \
