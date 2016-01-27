@@ -10,10 +10,10 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D5303
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=Xperia T2 Ultra
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/D5303/D5303:4.4.3/19.1.1.A.0.165/Wv93Zw:user/release-keys
 PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="D5303-user 4.4.3 19.1.1.A.0.165 Wv93Zw release-keys"
 
 PRODUCT_NAME := cm_tianchi
 PRODUCT_DEVICE := tianchi
-PRODUCT_MODEL := Xperia T2 Ultra
+PRODUCT_MODEL := D5303
